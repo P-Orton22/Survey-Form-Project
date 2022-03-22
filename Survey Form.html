@@ -22,8 +22,31 @@
             <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required>
           </div>
           <div class="form-group">
+              <p>
+                  Which best describes how you enjoy Age of Sigmar?
+              </p>
+            <select id="dropdown" name="participation-type" class="form-control" required>
+                  <option disabled selected value>Select how you hobby.</option>
+                  <option value="collect">Just Collect</option>
+                  <option value="build">Build and Convert</option>
+                  <option value="paint">Build and Paint</option>
+                  <option value="play">Play Casually</option>
+                  <option value="competetive">Play Competetively</option>
+                  <option value="read">Read the Fiction</option>
+                  <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
             <label id="number-label" for="number">How long have you been a fan of Age of Sigmar?</label>
             <input type="number" name="years-participation" id="number" min="0" max="7" class="form-control" placeholder="Years"/>
+          </div>
+          <div class="form-group">
+              <p>
+                  How many factions do you collect?
+              </p>
+              <label>
+                  <input name="faction-number" type="radio" value="none" class="input-radio" checked>None
+              </label>
           </div>
         </form>
 </body>
